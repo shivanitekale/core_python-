@@ -1,0 +1,94 @@
+#Inheritance
+class Chef():
+    def make_chicken(self):
+        print("The chef makes chichen")
+    def make_salad(self):
+        print("The chef makes salad")
+    def make_spl_dish(self):
+        print("The chef makes spl dish")
+mychef=Chef()
+print(mychef.make_chicken())
+class Chinesechef(Chef):
+         def make_fried_rice(self):
+             print("The chef makes fried rice")
+mychinesechef=Chinesechef()
+print(mychinesechef.make_chicken())
+
+
+
+
+
+#Polymorphism
+class Dog():
+    def __init__(self,name):
+        self.name=name
+    def speak(self):
+        return self.name+"says woof"
+class Cat():
+    def __init__(self,name):
+        self.name=name
+    def speak(self):
+        return self.name+"says meow"
+niko=Dog("niko")
+felix=Cat("filo")
+print(niko.speak())
+print(felix.speak())
+
+
+
+
+
+# polymorphism using for loops
+class India():
+    def capital(self):
+        print("Delhi is a capital of India")
+    def language(self):
+        print("hindi is primary language")
+    def type(self):
+        print("india is develeping country")
+
+class USA():
+    def capital(self):
+        print("WS is a capital of USA")
+
+    def language(self):
+            print("English is primary language")
+
+    def type(self):
+            print("USA is develeped country")
+india=India()
+usa=USA()
+for country in(india,usa):
+    country.capital()
+    country.language()
+    country.type()
+
+
+
+
+
+#Polymorphism with inheritance
+
+class Bird:
+    def intro(self):
+        print("There are many types of birds")
+    def flight(self):
+        print("most of birds can fly but some cannot")
+class Sparrow(Bird):
+    def flight(self):
+        print("sparrow can fly")
+class Ostrich(Bird):
+    def flight(self):
+        print("ostrich cannot fly")
+bird=Bird()
+spa=Sparrow()
+ost=Ostrich()
+bird.intro()
+bird.flight()
+spa.intro()
+spa.flight()
+ost.intro()
+ost.flight()
+
+
+
