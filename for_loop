@@ -1,0 +1,13 @@
+#e.g 1
+x="Shivani"
+for letters in x :
+   print(letters)
+
+#e.g 2
+friends=["pooja","gita","jims"]
+for elements in friends :
+       print(elements)
+
+#e.g 3
+for numbers in range(5):
+    print(numbers)
