@@ -1,0 +1,51 @@
+#..... string
+
+ 
+print("Shivani")
+print("\n pooja")
+
+#....... inbuilt function for string
+#.......1 upper()
+
+x="Shivani"
+print(x.upper())
+
+#.....2 lower()
+
+x="Shivani"
+print(x.lower())
+
+#......3 isupper()
+
+x="Shivani"
+print(x.isupper())
+
+#......4 islower()
+
+x="Shivani"
+print(x.islower())
+
+#......5 length()
+
+x="Shivani"
+print(len(x))
+
+#......6 Replace()
+
+x="Shivani Tekale"
+print(x.replace("Shivani","Arati"))
+
+#......7 index()
+
+x="Shivani Tekale"
+print(x.index("a"))
+
+#.....IMP Example   (not work )
+
+#x="Shivani"
+#print(x.isupper().upper())
+
+#.......Taking input from user
+
+Name=input("Enter your name: ")
+print(Name)
